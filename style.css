@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: black;
+    margin: 150px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5lp0eP9RRXym1mvLrjMPn0C6z4Gfckh8qMw&s);
+    background-size: cover;       /* Ensures the image covers the entire screen */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.form {
+    background-color: #15172b;
+    border-radius: 20px;
+    padding: 20px;
+    width: 50%;
+    max-width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    color: #eee;
+    font-size: 18px;
+    height: 40px;
+    outline: 0;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.iLabel {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #65657b;
+    font-family: sans-serif;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.input:focus + .iLabel, 
+.input:not(:placeholder-shown) + .iLabel {
+    top: 0;
+    left: 10px;
+    font-size: 12px;
+    color: #dc2f55;
+    background-color: #15172b;
+    padding: 0 5px;
+}
+
+.checkbox-container label {
+    display: block;
+    color: #eee;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.Signup{
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.submit:active {
+    background-color: #06b;
+}
+
+.confirmation-message {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+p{
+    color: white;
+}
+a{
+    color: #dc2f55;
+}
